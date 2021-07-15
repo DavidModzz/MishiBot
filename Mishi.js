@@ -84,12 +84,6 @@ break
                 
 }
 
-case 'bot de mierda':
-client.sendMessage(from, 'Miren al autista', text, {quoted : sam})
-break
-                
-}
-
 } catch (e) {
         
 console.log(e)}
