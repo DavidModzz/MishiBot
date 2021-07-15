@@ -1,0 +1,12 @@
+{
+  "name": "Mishigang-Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "MishiBot.js",
+  "scripts": {
+  "start": "node MishiBot.js"
+  },
+  "dependencies": {
+    "@adiwajshing/baileys": "^3.4.1"
+  }
+}
