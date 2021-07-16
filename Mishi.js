@@ -105,7 +105,7 @@ break
            if (budy.startsWith(`#reglas`)) {
         
                          reply(`*Seguí las reglas negro puto*`)  
-        const none = fs.readFileSync('./mp3/Rules.mp3');
+        const none = fs.readFileSync('./Rules.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }    
                   
