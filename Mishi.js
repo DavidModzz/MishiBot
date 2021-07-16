@@ -83,7 +83,7 @@ client.sendMessage(from, '*Hola hermosa* * *Se acerca y le insemina el óvulo* *
 break
  
 case 'Hola':
-client.sendMessage(from, '*Hola puta* *', text, {quoted : sam})
+client.sendMessage(from, '*Hola puta*', text, {quoted : sam})
 break
 
 case 'gay':
@@ -102,9 +102,10 @@ case 'Negro':
 client.sendMessage(from, '*Oe acá no discriminamos 😡🤬(a menos que seas jugador de fri fayer)*', text, {quoted : sam})
 break
 
-case '.reglas':
-client.sendMessage(from, fs.readFileSync('./mp3/Rules.mp3'), audio, {quoted : sam})
+case 'reglas':
+client.sendMessage(from, fs.readFileSync('./mp3/Rules.mp3'), MessageType.audio, {quoted : sam})
 break
+
 }
 
 } catch (e) {
