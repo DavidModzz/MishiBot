@@ -103,7 +103,8 @@ client.sendMessage(from, '*Oe acá no discriminamos 😡🤬(a menos que seas ju
 break
 
 case 'reglas':
-client.sendMessage(from, fs.readFileSync('./mp3/Rules.mp3'), MessageType.audio, {quoted : sam})
+let Fisher = fs.readFileSync('./mp3/Rules.mp3')
+client.sendMessage(from, Fisher, MessageType.audio, {quoted : sam})
 break
 
 }
