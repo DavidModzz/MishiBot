@@ -79,7 +79,7 @@ const pushname = sam.key.fromMe ? client.user.name : conts.notify || conts.vname
 switch (command) {
 
 case 'bot':
-client.sendMessage(from, 'Todavia no estoy terminado mamahuevo😡🤬', text, {quoted : sam})
+client.sendMessage(from, '*Hola hermosa* * *Se acerca y le insemina el óvulo* *', text, {quoted : sam})
 break
                 
 }
