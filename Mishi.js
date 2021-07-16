@@ -81,7 +81,27 @@ switch (command) {
 case 'bot':
 client.sendMessage(from, '*Hola hermosa* * *Se acerca y le insemina el óvulo* *', text, {quoted : sam})
 break
-                
+ 
+case 'Hola':
+client.sendMessage(from, '*Hola puta* *', text, {quoted : sam})
+break
+
+case 'gay':
+client.sendMessage(from, '*Tu viejo*', text, {quoted : sam})
+break
+
+case ':v':
+client.sendMessage(from, '*como que :v negro de mierda* 😡🤬', text, {quoted : sam})
+break
+
+case 'sexo':
+client.sendMessage(from, 'wa.me/595985865771 *El cobra 1$ la hora*', text, {quoted : sam})
+break
+                  
+case 'Negro':
+client.sendMessage(from, '*Oe acá no discriminamos 😡🤬(a menos que seas jugador de fri fayer)*', text, {quoted : sam})
+break
+ 
 }
 
 } catch (e) {
