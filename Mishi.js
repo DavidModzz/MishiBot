@@ -1,18 +1,22 @@
 const { WAConnection, MessageType } = require('@adiwajshing/baileys');
 const fs = require('fs');
-const prefix = '.'
+const prefix = '/'
 
 async function iniciar () { 
         const client = new WAConnection()
 //Aquí el "client" lo pueden cambiar a su gusto. Pero si cambian, tendrán que cambiar todos los "client" por el cambio que hicieron.
         client.logger.level = 'warn'
-const Cfonts = require('cfonts')
+Cfonts.say('MishiBot'), {
+colors: ['#ff0000'],
+font: 'block',
+aling: 'center', //'center'
+})
 //llamar al código QR
         client.on('qr', () => {
         })
 
 //crear un archivo Json para guardar información: ID del cliente, Token y Keys del cliente y del SERVER.
-        fs.existsSync('./Samu330.json') && client.loadAuthInfo('./Samu330.json')
+        fs.existsSync('./Mishi.json') && client.loadAuthInfo('./Mishi.json')
 
 //Conectando o reconectando
         client.on('connecting', () => {
@@ -24,7 +28,7 @@ const Cfonts = require('cfonts')
         console.log('Conectado exitosamente :D')
         })
         await client.connect({timeoutMs: 30*1000})
-        fs.writeFileSync('./Samu330.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
+        fs.writeFileSync('./Mishi.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
         
 
 client.on('chat-update', async (sam) => {
