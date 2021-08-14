@@ -6,7 +6,7 @@ async function iniciar () {
         const client = new WAConnection()
 //Aquí el "client" lo pueden cambiar a su gusto. Pero si cambian, tendrán que cambiar todos los "client" por el cambio que hicieron.
         client.logger.level = 'warn'
-const Cfonts = require('cfonte')
+const Cfonts = require('cfonts')
 //llamar al código QR
         client.on('qr', () => {
         })
