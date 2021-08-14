@@ -6,7 +6,11 @@ async function iniciar () {
         const client = new WAConnection()
 //Aquí el "client" lo pueden cambiar a su gusto. Pero si cambian, tendrán que cambiar todos los "client" por el cambio que hicieron.
         client.logger.level = 'warn'
-
+Cfonts.say('MishiBot'), {
+colors: ['#ff0000'],
+font: 'block',
+aling: 'center', //'center'
+})
 //llamar al código QR
         client.on('qr', () => {
         })
