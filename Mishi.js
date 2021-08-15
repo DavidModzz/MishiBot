@@ -10,7 +10,7 @@ Cfonts.say('MishiBot'), {
 colors: ['#ff0000'],
 font: 'block',
 aling: 'center', //'center'
-})
+}
 
 //llamar al código QR
         client.on('qr', () => {
