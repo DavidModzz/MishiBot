@@ -81,7 +81,7 @@ const isMe = senderNumber == botNumber
 const conts = sam.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
 const pushname = sam.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 
-if (budy== Reglas'){
+if (budy== 'Reglas'){
 client.sendMessage(from, fs.readFileSync('./Media/reglas.mp3'), MessageType.audio, {quoted : sam})
 reply('Sigue las reglas, negro puto, pinche fri fai qliao')}
 
