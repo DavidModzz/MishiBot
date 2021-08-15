@@ -1,16 +1,17 @@
 const { WAConnection, MessageType } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const prefix = '/'
-
+const Cfonts = require('cfonts')
 async function iniciar () { 
         const client = new WAConnection()
-//Aquí el "client" lo pueden cambiar a su gusto. Pero si cambian, tendrán que cambiar todos los "client" por el cambio que hicieron.
+        
         client.logger.level = 'warn'
 Cfonts.say('MishiBot'), {
 colors: ['#ff0000'],
 font: 'block',
 aling: 'center', //'center'
 })
+
 //llamar al código QR
         client.on('qr', () => {
         })
@@ -79,6 +80,10 @@ const senderNumber = sender.split("@")[0]
 const isMe = senderNumber == botNumber
 const conts = sam.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
 const pushname = sam.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
+
+if (budy== Reglas'){
+client.sendMessage(from, fs.readFileSync('./Media/reglas.mp3'), MessageType.audio, {quoted : sam})
+reply('Sigue las reglas, negro puto, pinche fri fai qliao')}
 
 switch (command) {
 
